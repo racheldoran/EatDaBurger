@@ -9,7 +9,7 @@ $(function() {
     };
 
     // Send the PUT request.
-    $.ajax("/api/burger/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newEatingState
     }).then(
@@ -31,12 +31,12 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/burger", {
+    $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger
     }).then(
       function() {
-        console.log("created new cat");
+        console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
@@ -47,7 +47,7 @@ $(function() {
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/burger/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "DELETE"
     }).then(
       function() {
