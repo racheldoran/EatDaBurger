@@ -1,23 +1,4 @@
-
-
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #db9a44;
-    text-align: center;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+body {
+  background: yellow;
+  text-align: center;
+}
