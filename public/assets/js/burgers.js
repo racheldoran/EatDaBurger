@@ -21,10 +21,10 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#burgerSubmit").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-  
+    console.log("hi")
     var newBurger = {
       name: $("#ca").val().trim(),
       devoured: $("[name=devoured]:checked").val()
@@ -54,7 +54,7 @@ $(function() {
       function() {
         console.log("deleted burger", id);
         // Reload the page to get the updated list
-        location.reload();
+        // location.reload();
       }
     );
   });
